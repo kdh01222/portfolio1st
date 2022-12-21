@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+<script src="script/main.js"></script>
+
+
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="skip_button">
+		<a href="#section">본문 바로가기</a>
+	</div>
+	<div class="dim"></div>
+<!----------------------- 헤더 ------------------------->
+	<header id="header"><!-- 100vh -->
+		<div class="header_top"><!--  flex -->
+			<div class="logo"><h1><a href=""></a></h1></div>
+			<nav id="gnb">
+				<ul>
+					<li>
+						<a href="">부산에 가면</a>
+						<ul>
+							<li><a href="">명소</a></li>
+							<li><a href="">음식</a></li>
+							<li><a href="">숙박</a></li>
+							<li><a href="">쇼핑</a></li>
+							<li><a href="">축제</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">추천 여행</a>
+						<ul>
+							<li><a href="">일정여행</a></li>
+							<li><a href="">테마여행</a></li>
+							<li><a href="">미식투어</a></li>
+							<li><a href="">해양·체험</a></li>
+							<li><a href="">부산 액티비티 테스트</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">여행 준비</a>
+						<ul>
+							<li><a href="">여행큐레이션</a></li>
+							<li><a href="">가이드북&지도</a></li>
+							<li><a href="">문화관광해설사</a></li>
+							<li><a href="">여행준비정보</a></li>
+							<li><a href="">뉴스레터</a></li>
+							<li><a href="">관광안내소</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">유용한 정보</a>
+						<ul>
+							<li><a href="">공지</a></li>
+							<li><a href="">이벤트&설문</a></li>
+							<li><a href="">공연&행사</a></li>
+							<li><a href="">부산여행상품</a></li>
+							<li><a href="">부산여행영상</a></li>
+							<li><a href="">부산여행사진</a></li>
+							<li><a href="">여행공유</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="utils">
+				<ul>
+					<li><a href=""><span>검색하기</span></a></li>
+					<li><a href=""><span>로그인</span></a></li>
+					<li><a href="">Language</a></li>
+				</ul>
+			</div>
+			<div class="mobile_utils">
+				<ul>
+					<li>
+						<a href="" class="login"></a>
+					</li>
+					<li><a href="" class="tab">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</li>
+				</ul>
+			</div>		
+		</div>
+		<dlv class="lang">
+			<ul>
+				<li><a href="">한국어</a></li>
+				<li><a href="">English</a></li>
+				<li><a href="">中國語</a></li>
+				<li><a href="">日本語</a></li>
+			</ul>
+		</dlv>
+
+		<div class="sub_slider">
+			<div class="swiper subswiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="">
+							<div class="event">
+								<p>행사예정</p>
+							</div>
+							<div class="title">
+								<p>부산 불꽃 축제</p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<div class="event">
+								<p>행사예정</p>
+							</div>
+							<div class="title">
+								<p>부산국제영화제</p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<div class="event">
+								<p>행사중</p>
+							</div>
+							<div class="title">
+								<p>부산국제록페스티벌</p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="">
+							<div class="event">
+								<p>행사중</p>
+							</div>
+							<div class="title">
+								<p>2020 BoF</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="controller">
+					<p><span id="bar"></span></p>
+					<a href="" id="pause_play" class="pause">pause</a>
+				</div>
+			</div>		
+		</div>
+<!----------------------- 모바일메뉴 ------------------------->
+		<nav id="mobile">
+			<ul>
+				<li>
+					<a href="">부산에 가면
+						<p class="m_btn">
+							<span class="up"></span>
+							<span class="down"></span>
+						</p>
+					</a>
+					<ul>
+						<li><a href="">명소</a></li>
+						<li><a href="">음식</a></li>
+						<li><a href="">숙박</a></li>
+						<li><a href="">쇼핑</a></li>
+						<li><a href="">축제</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">추천 여행
+						<p class="m_btn">
+							<span class="up"></span>
+							<span class="down"></span>
+						</p>
+					</a>
+					<ul>
+						<li><a href="">일정여행</a></li>
+						<li><a href="">테마여행</a></li>
+						<li><a href="">미식투어</a></li>
+						<li><a href="">해양·체험</a></li>
+						<li><a href="">부산 액티비티 테스트</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">여행 준비
+						<p class="m_btn">
+							<span class="up"></span>
+							<span class="down"></span>
+						</p>
+					</a>
+					<ul>
+						<li><a href="">여행큐레이션</a></li>
+						<li><a href="">가이드북&지도</a></li>
+						<li><a href="">문화관광해설사</a></li>
+						<li><a href="">여행준비정보</a></li>
+						<li><a href="">뉴스레터</a></li>
+						<li><a href="">관광안내소</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">유용한 정보
+						<p class="m_btn">
+							<span class="up"></span>
+							<span class="down"></span>
+						</p>
+					</a>
+					<ul>
+						<li><a href="">공지</a></li>
+						<li><a href="">이벤트&설문</a></li>
+						<li><a href="">공연&행사</a></li>
+						<li><a href="">부산여행상품</a></li>
+						<li><a href="">부산여행영상</a></li>
+						<li><a href="">부산여행사진</a></li>
+						<li><a href="">여행공유</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+<!----------------- 비디오 ----------------->
+		<video id="my_video" src="video/video6.mp4">
+			<div class="stop_button"><a href=""></a></div>
+		</video>
+		<div class="keytext">
+			<h2>갈매기,  오륙도,  산,  바다,  강</h2>
+			<p>관광, 경제, 교육, 문화의 역동하는 부산광역시<br>부산의 매력에 빠질 시간입니다.</p>
+			<a href="">VIEW</a>
+		</div>
+	</header>
+
+<!----------------------- 섹션 페이지1 ------------------------->
+	<section id="section1" class="page1">
+		
+		<div class="section_inner">
+			<div id="section1_bg">
+				<div class="swap_bg"><img src="images/section_01_event_01.jpg" alt="event1"></div>
+				<div class="swap_bg"><img src="images/section_01_event_02.jpg" alt="event1"></div>
+				<div class="swap_bg"><img src="images/section_01_event_03.jpg" alt="event1"></div>
+				<div class="swap_bg"><img src="images/section_01_event_04.jpg" alt="event1"></div>
+			</div>
+			<div class="s1_content">
+				<div class="swiper section1Swiper">
+					<div class="swiper-wrapper">
+						<div id="bg1" class="swiper-slide">
+							<div class="s1_contentbox">
+								<a href="" class="s1_t">
+									<div class="event">
+										<p>행사예정</p>
+									</div>
+									<div class="s1_title">
+										<h3>부산 불꽃 축제</h3>
+									</div>
+									<div class="date">
+										<p>2022년 11월 31일</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="s1_desc">
+										<p>날짜: 2022년 11월 31일</p>
+										<p>장소: 광안리해수욕장 일원</p>
+										<p>전화번호 : 051-713-5000</p>
+										<p>요금 : 무료(일부 유료)</p>
+										<p>행사시간 : 18:00~21:00</p>
+									</div>
+								</a>
+								<div class="homepage">
+									<a href="">
+										<i class="fa-solid fa-house"></i>
+										<span>홈페이지</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="bg2" class="swiper-slide">
+							<!-- <div class="s1_image2">
+								<img src="images/section_01_event_02.jpg" alt="부산 불꽃 축제">
+							</div> -->
+							<div class="s1_contentbox">
+								<a href="" class="s1_t">
+									<div class="event">
+										<p>행사예정</p>
+									</div>
+									<div class="s1_title">
+										<h3>부산국제영화제</h3>
+									</div>
+									<div class="date">
+										<p>2022년 11월 20일</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="s1_desc">
+										<p>날짜: 2022년 11월 20일</p>
+										<p>장소 : 부산 영화의 전당</p>
+										<p>전화번호 : 1688-3010</p>
+										<p>요금 : 일반상영작 8,000원,</p>
+										<p><span>행사 및 체험 무료(일부 유료)</span></p>
+									</div>
+								</a>
+								<div class="homepage">
+									<a href="">
+										<i class="fa-solid fa-house"></i>
+										<span>홈페이지</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<!-- <div class="s1_image3">
+								<img src="images/section_01_event_03.jpg" alt="부산 불꽃 축제">
+							</div> -->
+							<div id="bg3" class="s1_contentbox">
+								<a href="" class="s1_t">
+									<div class="event">
+										<p>행사중</p>
+									</div>
+									<div class="s1_title">
+										<h3>부산국제록페스티벌</h3>
+									</div>
+									<div class="date">
+										<p>2022년 11월 02일</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="s1_desc">
+										<p>날짜: 2022년 11월 20일</p>
+										<p>장소 : 부산광역시 사상구 삼락동 29-46</p>
+										<p><span>삼락생태공원</span></p>
+										<p>전화번호 : 1688-3010</p>
+										<p>요금 : 홈페이지 참조</p>
+									</div>
+								</a>
+								<div class="homepage">
+									<a href="">
+										<i class="fa-solid fa-house"></i>
+										<span>홈페이지</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<!-- <div class="s1_image4">
+								<img src="images/section_01_event_04.jpg" alt="부산 불꽃 축제">
+							</div> -->
+							<div id="bg4" class="s1_contentbox">
+								<a href="" class="s1_t">
+									<div class="event">
+										<p>행사중</p>
+									</div>
+									<div class="s1_title">
+										<h3>2022 BoF</h3>
+									</div>
+									<div class="date">
+										<p>2022년 11월 20일</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="s1_desc">
+										<p>날짜: 2022년 11월 20일</p>
+										<p>장소 : 부산아시아드경기장,</p>
+										<p><span>부산시민공원 등 부산 일원</span></p>
+										<p>전화번호 : 051-780-4144</p>
+										<p>요금 : 홈페이지 참조</p>
+									</div>
+								</a>
+								<div class="homepage">
+									<a href="">
+										<i class="fa-solid fa-house"></i>
+										<span>홈페이지</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!----------------------- 섹션 페이지2 ------------------------->
+	<section id="section2" class="page2"><!-- flex / align-items center / justify-content center -->
+		<div class="right"><!-- -->
+			<ul>
+				<li><p>관광문의</p><span>1330</span></li>
+				<li><p>민원대표전화</p><span>051-120</span></li>
+			</ul>
+		</div>
+
+		<div class="left_box"><!-- flex  -->
+			<ul>
+				<li><a href="" class="box1">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<h3>공지사항</h3>
+						<p>비짓부산의 이슈와<br>새로운소식을 전해드립니다</p>
+					</a>
+				</li>
+				<li><a href="" class="box2">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<h3>가이드북&지도</h3>
+						<p>부산의 다양한<br>관광지와 맛집을 찾아보세요</p>
+					</a>
+				</li>
+				<li><a href="" class="box3">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<h3>이벤트</h3>	
+						<p>부산 여행을 하며<br>다양한 이벤트에 참여해보세요</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		
+	</section>
+<!----------------------- 푸터 ------------------------->
+	<footer id="footer"><!-- flex -->
+		<div class="ft_left">
+			<div class="ft_logo"><img src="images/logo_white.png" alt="ft_logo"></div>
+			<div class="bt_utils">
+				<a href="">개인정보보호방침</a>
+				<a href="">저작권보호정책</a>
+				<a href="">약관</a><br>
+				<a href="">행정서비스 현황</a>
+				<a href="">뷰어 다운로드</a>
+			</div>
+		</div>
+		<div class="ft_right">
+			<div class="family_site">
+					<div class="title">
+						<a href="">FAMILY SITE<img src="images/bul_familysite.png" alt="arrow_icon"></a>
+					</div>
+					<div class="content">
+						<ul>
+							<li><a href="">부산시티투어</a></li>
+							<li><a href="">부산관광공사</a></li>
+							<li><a href="">부산문화포털 다봄</a></li>
+							<li><a href="">부산관광기업지원센터</a></li>
+						</ul>
+					</div>
+				</div>
+			<div class="sns">
+				<ul>
+					<li><a href=""><img src="images/instagram.png" alt="instagram"></a></li>
+					<li><a href=""><img src="images/blog.png" alt="blog"></a></li>
+					<li><a href=""><img src="images/youtube.png" alt="youtube"></a></li>
+					<li><a href=""><img src="images/facebook.png" alt="facebook"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="copyright">Copyright Busan Metropolitan City. All rights reserved.</div>
+	</footer>
+</div>
+
+
+			
+</body>
+</html>
